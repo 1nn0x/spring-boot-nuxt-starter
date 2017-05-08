@@ -24,6 +24,7 @@ nbdist/
 .nb-gradle/
 
 ### NuxtJs ###
+.mvn
 static
 .nuxt
 etc
