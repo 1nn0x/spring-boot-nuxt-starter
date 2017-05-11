@@ -14,9 +14,9 @@
 
     export default {
         asyncData () {
-            return axios.get('https://jsonplaceholder.typicode.com/users')
+            return axios.get('http://localhost:8080/api/users')
                 .then((res) => {
-                    return { users: res.data }
+                    return { users: res.data._embedded.users }
                 })
         },
         methods: {

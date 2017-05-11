@@ -3,8 +3,8 @@
         <h1 class="Content__Title">{{ $t('login.title') }}</h1>
         <form v-if="!$store.state.authUser" @submit.prevent="login">
             <p class="error" v-if="formError">{{ formError }}</p>
-            <p>{{ $t('login.username') }}: <input type="text" v-fr.azaddyne.model="formUsername" name="username" /></p>
-            <p>{{ $t('login.password') }}: <input type="password" v-fr.azaddyne.model="formPassword" name="password" /></p>
+            <p>{{ $t('login.username') }}: <input type="text" v-model="formUsername" name="username" /></p>
+            <p>{{ $t('login.password') }}: <input type="password" v-model="formPassword" name="password" /></p>
             <button type="submit">Login</button>
         </form>
         <div v-else>

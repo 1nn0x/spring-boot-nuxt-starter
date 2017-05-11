@@ -1,6 +1,12 @@
 server:
   port: 8080
-#  contextPath: /nuxt
+spring:
+  data:
+    rest:
+      base-path: /api
+
+
+#  contextPath: /api
 #spring:
 #  profiles: local,default
 #datasource:

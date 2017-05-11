@@ -15,7 +15,7 @@
             return !isNaN(+params.id)
         },
         asyncData ({ params, error }) {
-            return axios.get(`https://jsonplaceholder.typicode.com/users/${+params.id}`)
+            return axios.get(`http://localhost:8080/api/users/${+params.id}`)
                 .then((res) => res.data)
                 .catch(() => {
                     error({ message: 'User not found', statusCode: 404 })

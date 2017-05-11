@@ -1,6 +1,6 @@
-package fr.azaddyne.util;
+package fr.azaddyne.domain.util;
 
-import fr.azaddyne.model.Todo;
+import fr.azaddyne.domain.model.Todo;
 
 import java.util.ArrayList;
 import java.util.List;

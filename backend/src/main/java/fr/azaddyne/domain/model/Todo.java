@@ -1,4 +1,4 @@
-package fr.azaddyne.model;
+package fr.azaddyne.domain.model;
 
 /**
  * Created by jacky on 07/04/2017.

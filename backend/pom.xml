@@ -35,14 +35,22 @@
             <artifactId>spring-boot-starter-thymeleaf</artifactId>
         </dependency>
         <dependency>
-            <groupId>com.h2database</groupId>
-            <artifactId>h2</artifactId>
-            <scope>runtime</scope>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-data-rest</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-data-mongodb</artifactId>
         </dependency>
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-test</artifactId>
             <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+            <version>1.16.4</version>
         </dependency>
     </dependencies>
 
@@ -68,6 +76,9 @@
                             <resources>
                                 <resource>
                                     <directory>${project.parent.basedir}/frontend/dist/</directory>
+                                    <includes>
+                                        <include>index.html</include>
+                                    </includes>
                                     <includes>
                                         <include>**/**</include>
                                     </includes>
